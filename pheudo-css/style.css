@@ -1,0 +1,92 @@
+input:focus{
+    outline:0;
+    color:brown
+}
+li:visited{
+    color: red;
+}
+li:last-child{
+    color: yellow;
+}
+li:nth-child(2n){
+    background-color: yellowgreen;
+}
+.box1 img{
+    width: 250px;
+}
+.box img{
+    width: 250px;
+}
+.box2{
+    position: relative;
+    left: 100px;
+}
+/* .box1{
+  position: absolute;
+  bottom: 100px;
+} */
+
+.box1{
+    position: fixed;
+    top: 70px;
+    right: 100px;
+}
+.box4{
+    position: sticky;
+    top: 0px;
+}
+.box4 img{
+    width: 120px;
+}
+
+
+/* z-index, pseudo elements */
+.box{
+    /* eta dite hbe naile z-index kaj korena */
+    position: relative;
+}
+.ring{
+    position: relative;
+    top: -180px;
+
+}
+.boy{
+    z-index: 1;
+}
+.water{
+    position: relative;
+    top: -340px;
+    z-index: -5;
+}
+
+
+/* pseudo elements */
+
+p::first-letter{
+    font-size: x-large;
+    color: aqua;
+}
+p::first-line{
+   color: red;
+}
+::selection{
+   background-color: yellowgreen;
+}
+input::placeholder{
+    background-color: rgb(255, 127, 206);
+    color: blue;
+}
+
+h1::after{
+    content: '.pdf';
+    font-size: small;
+    background-color: blueviolet;
+    
+}
+h1::before{
+    content: 'its';
+    font-size: small;
+    background-color: rgb(68, 11, 25);
+    margin-right: 30px; 
+    padding: 20px;
+}
